@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+
+</head>
+
+<body>
+
+<header class="header">
+  <div class="navbar1">
+  <div class="IMG">
+  <img src="images/123.png" class="navimage"/>
+  </div>
+  <div class="items">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active hello">
+          <a class="nav-link" href="#">Collections</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Men</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Women</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+  <div class="cartitem">
+    <img src="./images/icon-cart.svg" class="cartimg">
+    <button class="num"><h7 id="priceitem">0</h7></button>
+
+  </div>
+   <img src="images/image-avatar.png" class="photo">
+  </div>
+</div>
+<hr style="width: 1150px;">
+</header> 
+
+    <div class="body row">
+      <div class="col-lg-6 left">
+        <img src="images/image-product-1.jpg" alt="sneaker" class="img">
+        <div class="xyz">
+          <img class="small" src="./images/image-product-1.jpg" alt="">
+          <img class="small" src="./images/image-product-2.jpg" alt="">
+          <img class="small" src="./images/image-product-3.jpg" alt="">
+          <img class="small" src="./images/image-product-4.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-6 right">
+        <p class="p1">
+          Sneaker Company
+        </p>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p class="descript">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <!-- <h3>$125.00</h3>
+  <p class="discount">50%</p>
+  
+  <div>
+  <p class="org_price">$250.00</p>
+  </div>
+  </div>
+  </div> -->
+
+        <div id="prices">
+          <div id="price">
+            <h3 id="price1" class="item-price1">$125.00</h3>
+            <p id="percent">50%</p>
+          </div>
+          <div id="total">
+            <p id="price2" class="item-price2">$250.00</p>
+          </div>
+        </div>
+        <div class="cartitems">
+          <div class="cart">
+            <input type="button" value="-" id="minus" onclick="rishav1()">
+            <input type="text" value="0" id="text">
+            <input type="button" value="+" id="plus" onclick="rishav()">
+          </div>
+          <div>
+            <button class="addtocart" onclick="rishav2()">
+              🛒 Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <footer class="footer">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Your Name Here</a>.
+        </footer>
+
+        <script>
+
+          function rishav() {
+            let a = document.getElementById('text');
+            a.value++;
+          }
+          function rishav1() {
+            let b = document.getElementById('text');
+            if (b.value > 0)
+              b.value--;
+          }
+          function rishav2() {
+            let b = document.getElementById('text');
+            let c = document.getElementById('priceitem');
+            c.innerHTML = b.value;
+          }
+        </script>
+</body>
+
+</html>
